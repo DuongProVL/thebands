@@ -1,0 +1,387 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+.clear {
+  clear: both;
+}
+.text-white {
+  color: #fff;
+}
+#main {
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 46px;
+  background-color: #000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 12px;
+  z-index: 1;
+}
+#nav {
+  display: inline-block;
+}
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+#nav > li > a {
+  color: #fff;
+  line-height: 46px;
+}
+
+#nav li a {
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: #000;
+  width: 100%;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  min-width: 160px;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#nav .subnav li {
+  list-style: none;
+}
+#nav .subnav li a {
+  padding: 0 16px;
+  text-transform: none;
+  line-height: 38px;
+  color: #000;
+}
+#header .search-btn {
+  float: right;
+}
+
+#header .search-btn {
+  color: #fff;
+  line-height: 46px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+}
+
+#slider {
+  position: relative;
+  height: 100%;
+  margin-top: 46px;
+}
+#slider img {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#slider .text-content {
+  position: absolute;
+  text-align: center;
+  bottom: 48px;
+  width: 100%;
+  color: #fff;
+}
+#slider .text-description {
+  margin-top: 25px;
+}
+
+#content {
+}
+
+#content .section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+#content .section-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+#content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-style: italic;
+  opacity: 0.6;
+}
+#content .about-text {
+  text-align: justify;
+  line-height: 1.4;
+}
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+  margin-top: 48px;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+#content .member-img {
+  width: 154px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+#content .member-list {
+  margin-top: 48px;
+}
+/* tour */
+.tour-section {
+  background-color: #000;
+}
+.tour-section .tickets-list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+.tickets-list li {
+  color: #757575;
+  list-style: none;
+  padding: 11px 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out {
+  color: #fff;
+  background-color: #f44336;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+.tickets-list .quanlity {
+  color: #fff;
+  background-color: #000;
+  width: 24px;
+  height: 24px;
+  float: right;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 20px;
+  margin-top: -2px;
+}
+/* place */
+.place-list {
+  margin: 32px -8px 0;
+  padding-bottom: 48px;
+}
+.place-list .place-item {
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px;
+}
+.place-item .place-img {
+  width: 100%;
+  display: block;
+}
+.place-item .place-img:hover {
+  opacity: 0.6;
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  margin-top: -4px;
+}
+.place-heading {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.place-time {
+  color: #000;
+  opacity: 0.6;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.place-description {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.place-btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+.place-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* footer */
+#footer {
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.modal.open {
+  display: flex;
+}
+.modal-container {
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+  position: relative;
+  animation-name: modalFadeIn;
+  animation-duration: 0.5s;
+}
+.modal-header {
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
+.fa-suitcase {
+  margin-right: 20px;
+}
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 15px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.modal-close:hover {
+  opacity: 1;
+  background-color: #ccc;
+  color: #000;
+}
+.modal-body {
+  padding: 16px;
+}
+.modal-label {
+  display: block;
+  font-size: 15px;
+  margin: 16px 0;
+}
+.modal-input {
+  padding: 10px;
+  width: 100%;
+}
+#buy-tickets {
+  display: block;
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  background-color: #009688;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+}
+#buy-tickets:hover {
+  opacity: 0.9;
+}
+.modal-footer {
+  padding: 16px;
+  text-align: right;
+}
+.modal-help a {
+  color: #2196f3;
+}
+.modal-help {
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .modal-container {
+    margin: 16px;
+  }
+}
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* Contacts */
+.contact-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-infor {
+  text-align: justify;
+}
+.contact-infor i {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.contact-input input {
+  padding: 8px;
+  border-radius: 1px solid #ddd;
+}
+.input-group input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.input-normal input {
+  width: calc(100% - 10px);
+}
+.send-button {
+  border: none;
+  float: right;
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+  margin-top: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.send-button:hover {
+  background-color: #ccc;
+  color: #000;
+}
